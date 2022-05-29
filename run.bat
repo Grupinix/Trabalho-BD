@@ -51,6 +51,7 @@ goto :continue_mysql
 %mysql_exec% -h localhost -u"%_user%" -p"%_user_password%" < create_cidade.sql
 %mysql_exec% -h localhost -u"%_user%" -p"%_user_password%" < create_disciplina.sql
 %mysql_exec% -h localhost -u"%_user%" -p"%_user_password%" < create_pessoa.sql
+%mysql_exec% -h localhost -u"%_user%" -p"%_user_password%" < create_professor.sql
 
 exit /b
 
