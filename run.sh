@@ -19,3 +19,4 @@ mysql -u"$user" -p"$password" < create_cidade.sql
 mysql -u"$user" -p"$password" < create_disciplina.sql
 mysql -u"$user" -p"$password" < create_pessoa.sql
 mysql -u"$user" -p"$password" < create_professor.sql
+mysql -u"$user" -p"$password" < create_escola.sql
