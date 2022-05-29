@@ -9,6 +9,8 @@ if %_sn% == s goto :continue
 if %_sn% == N goto :exit
 if %_sn% == n goto :exit
 
+goto :except
+
 :except
 echo "Responda somente com [S]im ou [N]ão."
 GOTO :choice
@@ -21,9 +23,34 @@ exit /b
 set /p _user="Insira o nome do usuário MySQL/MariaDB: "
 call :getPassword _user_password "Insira a senha do usuário MySQL/MariaDB: "
 
-mysql.exe -h localhost -u"%_user%" -p"%_user_password%" < create_schema_escola.sql
-mysql.exe -h localhost -u"%_user%" -p"%_user_password%" < create_cidade.sql
-mysql.exe -h localhost -u"%_user%" -p"%_user_password%" < create_disciplina.sql
+goto :mysql_choice
+
+:mysql_choice
+set /p _mc="Qual sua versão do MySQL? (5, 8) "
+
+if %_mc% == 5 goto :mysql5
+if %_mc% == 8 goto :mysql8
+
+goto :except_mysql
+
+:except_mysql
+echo "Escolha somente 5 ou 8!"
+goto :mysql_choice
+
+:mysql5
+set mysql_exec="C:\Program Files\MySQL\MySQL Server 5.7\bin\mysql.exe"
+goto :continue_mysql
+
+:mysql8
+set mysql_exec="C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe"
+goto :continue_mysql
+
+:continue_mysql
+
+%mysql_exec% -h localhost -u"%_user%" -p"%_user_password%" < create_schema_escola.sql
+%mysql_exec% -h localhost -u"%_user%" -p"%_user_password%" < create_cidade.sql
+%mysql_exec% -h localhost -u"%_user%" -p"%_user_password%" < create_disciplina.sql
+%mysql_exec% -h localhost -u"%_user%" -p"%_user_password%" < create_pessoa.sql
 
 exit /b
 
