@@ -55,6 +55,7 @@ goto :continue_mysql
 %mysql_exec% -h localhost -u"%_user%" -p"%_user_password%" < create_escola.sql
 %mysql_exec% -h localhost -u"%_user%" -p"%_user_password%" < create_turma.sql
 %mysql_exec% -h localhost -u"%_user%" -p"%_user_password%" < create_aluno.sql
+%mysql_exec% -h localhost -u"%_user%" -p"%_user_password%" < create_contato.sql
 
 exit /b
 

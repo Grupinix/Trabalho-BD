@@ -98,7 +98,7 @@ VALUES (
         (SELECT T.Codigo FROM Turma T, Escola E WHERE T.Nome = '1003' AND T.Codigo_Escola = E.Codigo AND E.Nome = 'COLEGIO MUNICIPAL JOAO PEREIRA')
        ),
        (
-        (SELECT Codigo FROM Pessoa WHERE Nome = 'HADLEY SáNTOS'),
+        (SELECT Codigo FROM Pessoa WHERE Nome = 'HADLEY SANTOS'),
         '202220082209',
         '2008-12-3',
         (SELECT T.Codigo FROM Turma T, Escola E WHERE T.Nome = '1003' AND T.Codigo_Escola = E.Codigo AND E.Nome = 'ESCOLA TECNICA ESTADUAL JOAO FONSECA IV')
