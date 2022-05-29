@@ -16,4 +16,4 @@ read -r -p "Insira a senha do usuário MySQL/MariaDB: " -s password
 
 mysql -u"$user" -p"$password" < create_schema_escola.sql
 mysql -u"$user" -p"$password" < create_cidade.sql
-mysql -u"$user" -p"$password" < create_disciplinas.sql
+mysql -u"$user" -p"$password" < create_disciplina.sql
