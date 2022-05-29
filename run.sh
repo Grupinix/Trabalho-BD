@@ -24,3 +24,4 @@ mysql -u"$user" -p"$password" < create_turma.sql
 mysql -u"$user" -p"$password" < create_aluno.sql
 mysql -u"$user" -p"$password" < create_contato.sql
 mysql -u"$user" -p"$password" < create_ministra.sql
+mysql -u"$user" -p"$password" < create_turma_ministra.sql
