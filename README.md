@@ -43,6 +43,30 @@ Turma_Ministra(Codigo_Disciplina, Codigo_Professor, Codigo_Turma)
     Codigo_Turma referência Turma
 ```
 
-## Criação do Esquema
-Para criação do esquema execute o seguinte script:
+## Rodar todos scripts SQL de modo automatizado
+
+Para não precisar executar cada script de uma vez, você pode simplesmente
+executar um de nossos scripts facilitadores:
+
+- **Linux** ~~Talvez também funcione em MacOS~~ 
+    ```sh
+    run.sh
+    ```
+- **Windows**
+    ```bat
+    bat.sh
+    ```
+
+## Rodar manualmente os scripts SQL
+
+Caso por algum motivo você não possa ou não queira executar um de nossos scripts
+facilitadores:
+
+- Para criação do esquema:
 [create_schema_escola.sql](create_schema_escola.sql)
+- Para popular a tabela Cidade:
+[create_cidade.sql](create_cidade.sql)
+- Para popular a tabela Disciplina:
+[create_disciplina.sql](create_disciplina.sql)
+- Para popular a tabela Pessoa:
+[create_pessoa.sql](create_pessoa.sql)
