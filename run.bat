@@ -4,10 +4,10 @@ setlocal enabledelayedexpansion
 :choice
 set /p _sn="Deseja recriar e popular o esquema ESCOLA? "
 
-IF /I %_sn% EQU "S" goto :continue
-IF /I %_sn% EQU "s" goto :continue
-IF /I %_sn% EQU "N" goto :exit
-IF /I %+sn% EQU "n" goto :exit
+if %_sn% == S goto :continue
+if %_sn% == s goto :continue
+if %_sn% == N goto :exit
+if %_sn% == n goto :exit
 
 :except
 echo "Responda somente com [S]im ou [N]ão."

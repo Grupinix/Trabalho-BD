@@ -1,6 +1,6 @@
 USE ESCOLA;
 
-INSERT INTO Pessoa (Nome)
+INSERT INTO Cidade (Nome)
 VALUES ('RIO DE JANEIRO'),
        ('BELFORD ROXO'),
        ('DUQUE DE CAXIAS'),
