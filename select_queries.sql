@@ -74,17 +74,21 @@ WHERE
     E.Codigo_Cidade <> P.Codigo_Cidade;
 
 -- 7
-WITH TM_GROUPED AS (
-    SELECT TM.Codigo_Professor, TM.Codigo_Turma
-    FROM Turma_Ministra TM
-    GROUP BY TM.Codigo_Professor
-)
 SELECT
     E.Nome,
-    COUNT(T.Codigo) AS "Qtd Turmas",
-    COUNT(TMG.Codigo_Professor) AS "Qtd Professores"
-FROM Escola E, Turma T, TM_GROUPED TMG
-WHERE
-    T.Codigo_Escola = E.Codigo AND
-    TMG.Codigo_Turma = T.Codigo
+    (
+        SELECT COUNT(Turma.Codigo)
+        FROM Turma
+        WHERE E.Codigo = Turma.Codigo_Escola
+    ) AS "Qtd Turmas",
+    (
+        SELECT SUM(TMT.Professores)
+        FROM (
+            SELECT T.Codigo_Escola as Codigo, COUNT(TM.Codigo_Professor) AS "Professores"
+            FROM Turma_Ministra TM, Turma T
+            WHERE TM.Codigo_Turma = T.Codigo
+            GROUP BY T.Codigo
+        ) as TMT WHERE TMT.Codigo = E.Codigo
+    ) as "Qtd Professores"
+FROM Escola E, Turma T
 GROUP BY E.Codigo;
