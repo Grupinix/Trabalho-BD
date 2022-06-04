@@ -88,4 +88,4 @@ FROM Escola E, Turma T, TM_GROUPED TMG
 WHERE
     T.Codigo_Escola = E.Codigo AND
     TMG.Codigo_Turma = T.Codigo
-GROUP BY E.Codigo
+GROUP BY E.Codigo;
