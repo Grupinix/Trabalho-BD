@@ -126,3 +126,12 @@ FROM Aluno A LEFT JOIN Pessoa P ON (
     A.Codigo = C.Codigo_Aluno
 )
 ORDER BY A.Matricula_Aluna, C.Nome;
+
+-- 10
+SELECT P.Nome AS "Professor"
+FROM Pessoa P, Professor Pf, Turma_Ministra TM
+WHERE
+    P.Codigo = Pf.Codigo AND
+    TM.Codigo_Professor = Pf.Codigo
+GROUP BY Pf.Codigo
+HAVING COUNT(DISTINCT TM.Codigo_Turma) = 1
