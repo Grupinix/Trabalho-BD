@@ -113,3 +113,16 @@ SELECT
         )
     ) AS "Razao Aluno/Prof"
 FROM Escola E;
+
+-- 9
+SELECT
+    A.Matricula_Aluna AS "Matricula do Aluno",
+    P.Nome AS "Nome do Aluno",
+    C.Nome AS "Nome do Contato",
+    C.Telefone AS "Telefone do Contato"
+FROM
+    Aluno A LEFT JOIN Pessoa P
+        on A.Codigo = P.Codigo
+    LEFT OUTER JOIN Contato C
+        on A.Codigo = C.Codigo_Aluno
+ORDER BY A.Matricula_Aluna, C.Nome;
