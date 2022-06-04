@@ -357,111 +357,6 @@ VALUES (
         '5523989504815'
        ),
        (
-        'DR. ARTHUR REZENDE',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'LUIZ MIGUEL CAVALCANTI'),
-        '5523580029413'
-       ),
-       (
-        'DR. LEVI MOREIRA',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'SRTA. MANUELA MARTINS'),
-        '5524428986219'
-       ),
-       (
-        'SRA. MARIA LUIZA VIEIRA',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'VITORIA ARAGAO'),
-        '5521164783016'
-       ),
-       (
-        'CAROLINA SALES',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'ALEXIA VIANA'),
-        '5524780329420'
-       ),
-       (
-        'LEONARDO CARDOSO',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'LUIZ OTAVIO RODRIGUES'),
-        '5522991753117'
-       ),
-       (
-        'MARIA SOPHIA MOREIRA',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'LUIZA NASCIMENTO'),
-        '5522223492713'
-       ),
-       (
-        'MARCOS VINICIUS MELO',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'EMILLY CARDOSO'),
-        '5522508072117'
-       ),
-       (
-        'JOAO GUILHERME SALES',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'RAQUEL CALDEIRA'),
-        '5521262179414'
-       ),
-       (
-        'DAVI LUCCA BARROS',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'MARIA SOPHIA DA CUNHA'),
-        '5521667126110'
-       ),
-       (
-        'AMANDA SALES',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'NICOLE CUNHA'),
-        '5524165007720'
-       ),
-       (
-        'ANA VITORIA PIRES',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'ENZO GONCALVES'),
-        '5522557579717'
-       ),
-       (
-        'SARAH DA PAZ',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'AUGUSTO DA CONCEICAO'),
-        '5522171319617'
-       ),
-       (
-        'STEPHANY MELO',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'SRA. ISIS MONTEIRO'),
-        '5522840372617'
-       ),
-       (
-        'SRA. MAITE REZENDE',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'LUNEA DAS NEVES'),
-        '5522285124217'
-       ),
-       (
-        'SR. LUIZ FERNANDO CARDOSO',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'THEO CUNHA'),
-        '5521857274810'
-       ),
-       (
-        'LAIS NUNES',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'NOAH NUNES'),
-        '5523726343114'
-       ),
-       (
-        'DR. PEDRO ROCHA',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'GABRIELLY MENDES'),
-        '5521472845714'
-       ),
-       (
-        'ALICIA ALMEIDA',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'ESTHER CARDOSO'),
-        '5523111851720'
-       ),
-       (
-        'ISAAC ARAGAO',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'JOANA BARBOSA'),
-        '5523551669315'
-       ),
-       (
-        'RAQUEL OLIVEIRA',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'ALEXANDRE SILVEIRA'),
-        '5521200150216'
-       ),
-       (
-        'FRANCISCO FERNANDES',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'SR. DAVI DA ROSA'),
-        '5523425926320'
-       ),
-       (
         'ANA LIVIA NUNES',
         (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'ALICE CORREIA'),
         '5522634475420'
@@ -1375,61 +1270,6 @@ VALUES (
         'DANILO TEIXEIRA',
         (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'RAFAEL LIMA'),
         '5523763714213'
-       ),
-       (
-        'DRA. ALEXIA MOURA',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'QUINN DA SILVEIRA'),
-        '5521364875920'
-       ),
-       (
-        'HELOISA COSTELA',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'EVELYN CASTRO'),
-        '5522252296418'
-       ),
-       (
-        'DRA. SARAH DA MOTA',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'LEANDRO ARAGAO'),
-        '5524190414311'
-       ),
-       (
-        'YAGO MONTEIRO',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'SRTA. MARIA CECILIA CAVALCANTI'),
-        '5521403153911'
-       ),
-       (
-        'ISABELLY DA CUNHA',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'LUCAS PIRES'),
-        '5523202180718'
-       ),
-       (
-        'BRUNA FOGACA',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'CLARA COSTELA'),
-        '5524137228611'
-       ),
-       (
-        'CAUA FERREIRA',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'MARIA ALICE DA CRUZ'),
-        '5523472345416'
-       ),
-       (
-        'SRTA. JOANA ALVES',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'ANTHONY REZENDE'),
-        '5521260928113'
-       ),
-       (
-        'DRA. ANA CLARA SALES',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'DR. JOAO GABRIEL SOUZA'),
-        '5523264817410'
-       ),
-       (
-        'DR. VINICIUS CARDOSO',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'DRA. YASMIN DUARTE'),
-        '5524573298117'
-       ),
-       (
-        'LUIZA PEREIRA',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'THALES MOREIRA'),
-        '5523622614613'
        ),
        (
         'REBECA PORTO',
@@ -2382,41 +2222,6 @@ VALUES (
         '5524986881513'
        ),
        (
-        'MARIA JULIA SALES',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'DRA. MAITE VIANA'),
-        '5522906648710'
-       ),
-       (
-        'AUGUSTO SILVEIRA',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'ANA BEATRIZ MARTINS'),
-        '5524558187416'
-       ),
-       (
-        'ALANA AZEVEDO',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'JOAO GABRIEL ARAGAO'),
-        '5523448550619'
-       ),
-       (
-        'HENRIQUE NOGUEIRA',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'FERDINAND DOMINGUES'),
-        '5524737566415'
-       ),
-       (
-        'CLARICE CORREIA',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'NEVADA DANTAS'),
-        '5522418799315'
-       ),
-       (
-        'DRA. ANA LAURA DA LUZ',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'DEACON CARDOSO'),
-        '5521163811620'
-       ),
-       (
-        'VINICIUS CAMPOS',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'FERNANDO CARDOSO'),
-        '5521593580110'
-       ),
-       (
         'DRA. LORENA FREITAS',
         (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'LUIZ FERNANDO ARAUJO'),
         '5522932728012'
@@ -2630,36 +2435,6 @@ VALUES (
         'AGATHA PORTO',
         (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'COLE MARTINS'),
         '5522435873714'
-       ),
-       (
-        'MARCOS VINICIUS JESUS',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'ANA VITORIA CALDEIRA'),
-        '5521334083911'
-       ),
-       (
-        'BRYAN PORTO',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'STEPHANY NOGUEIRA'),
-        '5521830959813'
-       ),
-       (
-        'ISABELLA MOREIRA',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'JOAO VITOR ARAGAO'),
-        '5521271584914'
-       ),
-       (
-        'MURILO AZEVEDO',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'VITOR LOPES'),
-        '5523195220320'
-       ),
-       (
-        'LUIZ MIGUEL DAS NEVES',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'DANILO RODRIGUES'),
-        '5523306545712'
-       ),
-       (
-        'MIRELLA BARROS',
-        (SELECT A.Codigo FROM Aluno A, Pessoa P WHERE A.Codigo = P.Codigo AND P.Nome = 'JULIE DAS DORES'),
-        '5524219169915'
        ),
        (
         'LUIZ FERNANDO MELO',
