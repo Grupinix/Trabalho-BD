@@ -73,3 +73,19 @@ WHERE
     E.Codigo_Professor = Dir.Codigo AND
     P.Codigo = Dir.Codigo AND
     E.Codigo_Cidade <> P.Codigo_Cidade;
+
+-- 7
+WITH TM_GROUPED AS (
+    SELECT TM.Codigo_Professor, TM.Codigo_Turma
+    FROM Turma_Ministra TM
+    GROUP BY TM.Codigo_Professor
+)
+SELECT
+    E.Nome,
+    COUNT(T.Codigo) AS "Qtd Turmas",
+    COUNT(TMG.Codigo_Professor) AS "Qtd Professores"
+FROM Escola E, Turma T, TM_GROUPED TMG
+WHERE
+    T.Codigo_Escola = E.Codigo AND
+    TMG.Codigo_Turma = T.Codigo
+GROUP BY E.Codigo
