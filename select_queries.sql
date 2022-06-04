@@ -50,16 +50,15 @@ GROUP BY P.Nome
 HAVING COUNT(TM.Codigo_Turma) > 2;
 
 -- 5
-WITH TM_GROUPED AS (
-    SELECT TM.Codigo_Disciplina, TM.Codigo_Professor
-    FROM Turma_Ministra TM
-    GROUP BY TM.Codigo_Disciplina, TM.Codigo_Professor
-)
 SELECT
     D.Nome AS "Disciplina",
     COUNT(M.Codigo_Professor) AS "Qtd Que Podem Ministrar",
     COUNT(TMG.Codigo_Professor) AS "Qtd Que Ministram"
-FROM Disciplina D, Ministra M LEFT JOIN TM_GROUPED TMG ON (
+FROM Disciplina D, Ministra M LEFT JOIN (
+    SELECT TM.Codigo_Disciplina, TM.Codigo_Professor
+    FROM Turma_Ministra TM
+    GROUP BY TM.Codigo_Disciplina, TM.Codigo_Professor
+) TMG ON (
     TMG.Codigo_Disciplina = M.Codigo_Disciplina AND
     TMG.Codigo_Professor = M.Codigo_Professor
 )
