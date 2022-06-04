@@ -99,9 +99,7 @@ SELECT
         (
             SELECT COUNT(A.Codigo)
             FROM Aluno A, Turma T1
-            WHERE
-                A.Codigo_Turma = T1.Codigo AND
-                T1.Codigo_Escola = E.Codigo
+            WHERE A.Codigo_Turma = T1.Codigo AND T1.Codigo_Escola = E.Codigo
         )
         /
         (
