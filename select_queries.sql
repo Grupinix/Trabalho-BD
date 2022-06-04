@@ -43,7 +43,6 @@ FROM Pessoa P, Professor Pf, Turma T, Ministra M, Turma_Ministra TM
 WHERE (
     P.Codigo = Pf.Codigo AND
     M.Codigo_Professor = Pf.Codigo AND
-    M.Codigo_Professor = Pf.Codigo AND
     TM.Codigo_Professor = Pf.Codigo AND
     TM.Codigo_Turma = T.Codigo
 )
