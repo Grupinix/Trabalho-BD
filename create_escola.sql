@@ -8,7 +8,7 @@ VALUES (
        ),
        (
         'INSTITUTIO FEDERAL DE EDUCACAO MARIA VICENTE',
-        (SELECT Codigo FROM Cidade WHERE Nome = 'SAO GONCALO'),
+        (SELECT Codigo FROM Cidade WHERE Nome = 'TANGUA'),
         (SELECT Codigo FROM Professor WHERE CPF = '57094863101')
        ),
        (
@@ -72,6 +72,6 @@ VALUES (
        ),
        (
         'COLEGIO ESTADUAL MATIAS OLHO',
-        (SELECT Codigo FROM Cidade WHERE Nome = 'CACHOEIRAS DE MACACU'),
+        (SELECT Codigo FROM Cidade WHERE Nome = 'NITEROI'),
         (SELECT Codigo FROM Professor WHERE CPF = '36459102805')
        );

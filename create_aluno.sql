@@ -10,8 +10,8 @@ VALUES (
        (
         (SELECT Codigo FROM Pessoa WHERE Nome = 'FERNANDO MOREIRA DA SILVA FILHO'),
         '202220051326',
-        '2005-7-14',
-        (SELECT T.Codigo FROM Turma T, Escola E WHERE T.Nome = '2002' AND T.Codigo_Escola = E.Codigo AND E.Nome = 'COLEGIO MUNICIPAL OSVALDO CRUZ')
+        '2008-7-14',
+        (SELECT T.Codigo FROM Turma T, Escola E WHERE T.Nome = '1001' AND T.Codigo_Escola = E.Codigo AND E.Nome = 'COLEGIO ESTADUAL MATIAS OLHO')
        ),
        (
         (SELECT Codigo FROM Pessoa WHERE Nome = 'YURI NOGUEIRA MOREIRA DA SILVA'),
