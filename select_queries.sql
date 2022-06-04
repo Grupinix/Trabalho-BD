@@ -90,5 +90,4 @@ SELECT
             GROUP BY T.Codigo
         ) as TMT WHERE TMT.Codigo = E.Codigo
     ) as "Qtd Professores"
-FROM Escola E, Turma T
-GROUP BY E.Codigo;
+FROM Escola E;
