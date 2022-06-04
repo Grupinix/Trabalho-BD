@@ -65,3 +65,11 @@ FROM Disciplina D, Ministra M LEFT JOIN TM_GROUPED TMG ON (
 )
 WHERE M.Codigo_Disciplina = D.Codigo
 GROUP BY D.Codigo;
+
+-- 6
+SELECT E.Nome, P.Nome
+FROM Escola E, Professor Dir, Pessoa P
+WHERE
+    E.Codigo_Professor = Dir.Codigo AND
+    P.Codigo = Dir.Codigo AND
+    E.Codigo_Cidade <> P.Codigo_Cidade;
