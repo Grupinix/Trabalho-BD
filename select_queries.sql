@@ -35,5 +35,18 @@ WHERE (
     T.Codigo = A.Codigo_Turma
 )
 GROUP BY E.Nome, T.Nome
-having count(A.Codigo) > 5;
+HAVING COUNT(A.Codigo) > 5;
+
+-- 4
+SELECT P.Codigo, P.Nome, Pf.Titulacao
+FROM Pessoa P, Professor Pf, Turma T, Ministra M, Turma_Ministra TM
+WHERE (
+    P.Codigo = Pf.Codigo AND
+    M.Codigo_Professor = Pf.Codigo AND
+    M.Codigo_Professor = Pf.Codigo AND
+    TM.Codigo_Professor = Pf.Codigo AND
+    TM.Codigo_Turma = T.Codigo
+)
+GROUP BY P.Nome
+HAVING COUNT(TM.Codigo_Turma) > 2;
 
