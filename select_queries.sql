@@ -91,3 +91,27 @@ SELECT
         ) as TMT WHERE TMT.Codigo = E.Codigo
     ) as "Qtd Professores"
 FROM Escola E;
+
+-- 8
+SELECT
+    E.Nome AS "Escola",
+    (
+        (
+            SELECT COUNT(A.Codigo)
+            FROM Aluno A, Turma T1
+            WHERE
+                A.Codigo_Turma = T1.Codigo AND
+                T1.Codigo_Escola = E.Codigo
+        )
+        /
+        (
+            SELECT SUM(TMT.Professores)
+            FROM (
+                SELECT T.Codigo_Escola as Codigo, COUNT(TM.Codigo_Professor) AS "Professores"
+                FROM Turma_Ministra TM, Turma T
+                WHERE TM.Codigo_Turma = T.Codigo
+                GROUP BY T.Codigo
+            ) as TMT WHERE TMT.Codigo = E.Codigo
+        )
+    ) AS "Razao Aluno/Prof"
+FROM Escola E;
