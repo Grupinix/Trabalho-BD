@@ -24,7 +24,7 @@ VALUES (
        (
         'ESCOLA MUNICIPAL DANTE DA SILVA',
         (SELECT Codigo FROM Cidade WHERE Nome = 'MAGE'),
-        (SELECT Codigo FROM Professor WHERE CPF = '46239015806')
+        (SELECT Codigo FROM Professor WHERE CPF = '50274963116')
        ),
        (
         'COLEGIO MUNICIPAL JOAO PEREIRA',
