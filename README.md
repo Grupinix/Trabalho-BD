@@ -48,13 +48,13 @@ Turma_Ministra(Codigo_Disciplina, Codigo_Professor, Codigo_Turma)
 Para não precisar executar cada script de uma vez, você pode simplesmente
 executar um de nossos scripts facilitadores:
 
-- **Linux** ~~Talvez também funcione em MacOS~~ 
+- **Linux** ~~Talvez também funcione em MacOS?~~ 
     ```sh
     run.sh
     ```
 - **Windows**
     ```bat
-    bat.sh
+    run.bat
     ```
 
 ## Rodar manualmente os scripts SQL
@@ -62,11 +62,17 @@ executar um de nossos scripts facilitadores:
 Caso por algum motivo você não possa ou não queira executar um de nossos scripts
 facilitadores:
 
-- Para criação do esquema:
-[create_schema_escola.sql](create_schema_escola.sql)
-- Para popular a tabela Cidade:
-[create_cidade.sql](create_cidade.sql)
-- Para popular a tabela Disciplina:
-[create_disciplina.sql](create_disciplina.sql)
-- Para popular a tabela Pessoa:
-[create_pessoa.sql](create_pessoa.sql)
+Para criação do esquema execute o seguinte script SQL:
+- [create_schema_escola.sql](create_schema_escola.sql)
+
+Para popular o esquema execute os seguintes scripts SQL:
+- [create_cidade.sql](create_cidade.sql)
+- [create_disciplina.sql](create_disciplina.sql)
+- [create_pessoa.sql](create_pessoa.sql)
+- [create_professor.sql](create_professor.sql)
+- [create_escola.sql](create_escola.sql)
+- [create_turma.sql](create_turma.sql)
+- [create_aluno.sql](create_aluno.sql)
+- [create_contato.sql](create_contato.sql)
+- [create_ministra.sql](create_ministra.sql)
+- [create_turma_ministra.sql](create_turma_ministra.sql)
